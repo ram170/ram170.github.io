@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<title> Coin Toss Generator </title>
+<script>
+//Have fun nibbas.
+//By a fellow nibba sriram.    
+function toss(){
+    var x=Math.floor((Math.random()*100)+0);
+   //console.log(x);
+    if(x%2==0){
+        //console.log(1); 
+       document.getElementById('IMG').src="https://qph.fs.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf";
+       document.getElementById('result').innerHTML="Heads";
+    }
+    if(x%2==1){
+        //console.log(0);
+        document.getElementById('IMG').src="https://qph.fs.quoracdn.net/main-qimg-148ae81e6fe0500e130fb547026a9b26";
+        document.getElementById('result').innerHTML="Tails";
+    }    
+}
+</script>
+</head>
+<body>
+    <h1><center><u>Click the button to toss the coin</u></center></h1>
+   <center> <h2 id="here"><img src="https://qph.fs.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf" id="IMG" width="100" height="100"></h2> </center>
+   <center> <input type="button" onclick="toss()" value="Toss"/></center>
+   <center><h2 id="result"></h2></center>
+</body>
