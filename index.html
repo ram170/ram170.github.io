@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="cointoss.css" rel="stylesheet" type="text/css">
 <script>
 //Have fun nibbas.
 //By a fellow nibba sriram.    
@@ -34,12 +34,18 @@ function toss(){
 </script>
 </head>
 <body> 
-    <h1><center><u><b>Click the button to toss the coin</b></u></center></h1>
-   <center> <h2 id="here"><img src="https://qph.fs.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf" id="IMG" width="100" height="100"></h2> </center>
-   <center> <input type="button" onclick="toss()" value="Toss"/></center>
-   <center><h2 id="result"></h2></center>
-   <center><h2 id="try">Try number: 0</h2></center>
-   <center><p><h4 id="heads">Heads-0</h4><h4 id="tails">Tails-0</h4></p></center>
+  <div class="container-fluid"> 
+    <div class="row">
+       <div class="col-md-12">   
+         <h1><center><u><b>Click the button to toss the coin</b></u></center></h1>
+         <center> <h2 id="here"><img src="https://qph.fs.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf" id="IMG" width="100" height="100"></h2> </center>
+         <center> <input type="button" onclick="toss()" value="Toss"/></center>
+         <center><h2 id="result"></h2></center>
+         <center><h2 id="try">Try number: 0</h2></center>
+         <center><p><h4 id="heads">Heads-0</h4><h4 id="tails">Tails-0</h4></p></center>
+       </div>
+    </div>
+  </div> 
    <div class="container-fluid">
       <div class="row" id="bottom">
           <center><p id="Bottom-text">Connect with me?</p></center>
